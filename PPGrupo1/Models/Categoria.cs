@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
-using Fluent.Infrastructure.FluentModel;
 using System.Data.Entity;
 
 
@@ -21,10 +20,10 @@ namespace PPGrupo1.Models
         public bool Activo { get; set; }
     }
 
-    public class CategoriaDbContext : ApplicationDbContext
+    public class CategoriaDbContext : DbContext
     {
         public DbSet<Categoria> Categoria { get; set; }
 
-
+        public System.Data.Entity.DbSet<PPGrupo1.Models.Productos> Productos { get; set; }
     }
 }

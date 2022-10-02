@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using System.Data.Entity;
-using Fluent.Infrastructure.FluentModel;
 
 
 namespace PPGrupo1.Models
@@ -30,14 +29,13 @@ namespace PPGrupo1.Models
         // Foreign key to Categoria
 
         [Required]
-        [ForeignKey("Categoria")]
-        public int CategoriaId { get; set; }
+       
         public virtual Categoria Categoria { get; set; }
 
 
     }
 
-    public class ProductosDbContext : ApplicationDbContext
+    public class ProductosDbContext : DbContext
     {
         public DbSet<Productos> Producto { get; set; }
 

@@ -5,7 +5,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using Fluent.Infrastructure.FluentModel;
 
 namespace PPGrupo1.Models
 {
@@ -17,11 +16,10 @@ namespace PPGrupo1.Models
         public int ClienteId { get; set; }
 
         
-        [Required]
+        
         [Display(Name = "RNC/Cedula")]
         public int Codigo { get; set; }
 
-        [Required]
         [StringLength(50)]
         [Display(Name = "Nombre Comercial")]
 
@@ -30,14 +28,9 @@ namespace PPGrupo1.Models
         [StringLength(50)] 
         public string Telefono { get; set; }
 
-        [Required]
         [StringLength(50)] 
         public string Email { get; set; }
 
-
-        [Required]
-        [ForeignKey("MetodoPago")]
-        public int MetodoPagoId { get; set; }
         public virtual MetodoPago MetodoPago { get; set; }
 
         public bool Activo { get; set; }
@@ -45,7 +38,7 @@ namespace PPGrupo1.Models
 
     }
 
-    public class ClientesProdDbContext : ApplicationDbContext
+    public class ClientesProdDbContext : DbContext
     {
         public DbSet<Clientes> Cliente { get; set; }
 

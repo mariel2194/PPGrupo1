@@ -1,5 +1,4 @@
-﻿using Fluent.Infrastructure.FluentModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -35,7 +34,7 @@ namespace PPGrupo1.Models
 
     }
 
-    public class VendedoresDbContext : ApplicationDbContext
+    public class VendedoresDbContext : DbContext
     {
         public DbSet<Vendedores> Vendedor { get; set; }
 

@@ -5,7 +5,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
-using Fluent.Infrastructure.FluentModel;
 
 
 namespace PPGrupo1.Models
@@ -28,7 +27,7 @@ namespace PPGrupo1.Models
 
     }
 
-    public class FacturacionProdDbContext : ApplicationDbContext
+    public class FacturacionProdDbContext : DbContext
     {
         public DbSet<MetodoPago> MetodoPag { get; set; }
 

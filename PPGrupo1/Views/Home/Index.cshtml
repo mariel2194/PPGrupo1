@@ -42,12 +42,12 @@
             <div id="sidebar" class="sidebar sidebar-with-footer">
 
                 <div class="app-brand">
-                    <a href="/index.html">
+                    <a href="~/Home">
                         <span class="brand-name">MENU</span>
                     </a>
                 </div>
 
-                <div class="sidebar-left" data-simplebar style="height: 100%;">
+                <div class="sidebar-left" data-simplebar style="height:100%;">
                     <!-- sidebar menu -->
                     <ul class="nav sidebar-inner" id="sidebar-menu">
                         <li class="active">
@@ -63,13 +63,13 @@
                             </a>
                         </li>
                         <li>
-                            <a class="sidenav-item-link" href="team.html">
+                            <a class="sidenav-item-link" href="~/MetodoPago">
                                 <i class="mdi mdi-account-group"></i>
                                 <span class="nav-text">Metodos De Pago</span>
                             </a>
                         </li>
                         <li>
-                            <a class="sidenav-item-link" href="team.html">
+                            <a class="sidenav-item-link" href="~/Vendedores">
                                 <i class="mdi mdi-account-group"></i>
                                 <span class="nav-text">Vendedores</span>
                             </a>
@@ -103,7 +103,7 @@
 
                                     </a>
                                 </li>
-</div>
+                </div>
                 </ul>
                 </li>
                 <li class="has-sub">
@@ -198,7 +198,7 @@
             </ul>
         </div>
     </div>
-    </div>
+
     </aside>
 
 
@@ -505,12 +505,7 @@
                                     </div>
                                 </div>
 
-                                <footer class="border-top dropdown-notify-footer">
-                                    <div class="d-flex justify-content-between align-items-center py-2 px-4">
-                                        <span>Last updated 3 min ago</span>
-                                        <a id="refress-button" href="javascript:" class="btn mdi mdi-cached btn-refress"></a>
-                                    </div>
-                                </footer>
+
                             </div>
                         </li>
                         <!-- User Account -->
@@ -536,7 +531,7 @@
                                 <li>
                                     <a class="dropdown-link-item" href="user-activities.html">
                                         <i class="mdi mdi-diamond-stone"></i>
-                                        <span class="nav-text">Activitise</span>
+                                        <span class="nav-text">Activities</span>
                                     </a>
                                 </li>
                                 <li>
@@ -559,159 +554,158 @@
         </header>
 
 
-                <!-- Stock Modal -->
-                <div class="modal fade modal-stock" id="modal-stock" aria-labelledby="modal-stock" aria-hidden="true">
-                    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-                        <form action="#">
-                            <div class="modal-content">
-                                <div class="modal-header align-items-center p3 p-md-5">
-                                    <h2 class="modal-title" id="exampleModalGridTitle">Add Stock</h2>
-                                    <div>
-                                        <button type="button" class="btn btn-light btn-pill mr-1 mr-md-2" data-dismiss="modal"> cancel </button>
-                                        <button type="submit" class="btn btn-primary  btn-pill" data-dismiss="modal"> save </button>
-                                    </div>
-
-                                </div>
-                                <div class="modal-body p3 p-md-5">
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                            <h3 class="h5 mb-5">Product Information</h3>
-                                            <div class="form-group mb-5">
-                                                <label for="new-product">Product Title</label>
-                                                <input type="text" class="form-control" id="new-product" placeholder="Add Product">
-                                            </div>
-                                            <div class="form-row mb-4">
-                                                <div class="col">
-                                                    <label for="price">Price</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text" id="basic-addon1">$</span>
-                                                        </div>
-                                                        <input type="text" class="form-control" id="price" placeholder="Price" aria-label="Price"
-                                                               aria-describedby="basic-addon1">
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <label for="sale-price">Sale Price</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text" id="basic-addon1">$</span>
-                                                        </div>
-                                                        <input type="text" class="form-control" id="sale-price" placeholder="Sale Price" aria-label="SalePrice"
-                                                               aria-describedby="basic-addon1">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="product-type mb-3 ">
-                                                <label class="d-block" for="sale-price">Product Type <i class="mdi mdi-help-circle-outline"></i> </label>
-                                                <div>
-
-                                                    <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
-                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="checked">
-                                                        <label class="custom-control-label" for="customRadio1">Physical Good</label>
-                                                    </div>
-
-                                                    <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Digital Good</label>
-                                                    </div>
-
-                                                    <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
-                                                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio3">Service</label>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="editor">
-                                                <label class="d-block" for="sale-price">Description <i class="mdi mdi-help-circle-outline"></i></label>
-                                                <div id="standalone">
-                                                    <div id="toolbar">
-                                                        <span class="ql-formats">
-                                                            <select class="ql-font"></select>
-                                                            <select class="ql-size"></select>
-                                                        </span>
-                                                        <span class="ql-formats">
-                                                            <button class="ql-bold"></button>
-                                                            <button class="ql-italic"></button>
-                                                            <button class="ql-underline"></button>
-                                                        </span>
-                                                        <span class="ql-formats">
-                                                            <select class="ql-color"></select>
-                                                        </span>
-                                                        <span class="ql-formats">
-                                                            <button class="ql-blockquote"></button>
-                                                        </span>
-                                                        <span class="ql-formats">
-                                                            <button class="ql-list" value="ordered"></button>
-                                                            <button class="ql-list" value="bullet"></button>
-                                                            <button class="ql-indent" value="-1"></button>
-                                                            <button class="ql-indent" value="+1"></button>
-                                                        </span>
-                                                        <span class="ql-formats">
-                                                            <button class="ql-direction" value="rtl"></button>
-                                                            <select class="ql-align"></select>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div id="editor"></div>
-
-                                                <div class="custom-control custom-checkbox d-inline-block mt-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                    <label class="custom-control-label" for="customCheck2">Hide product from published site</label>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile" placeholder="please imgae here">
-                                                <span class="upload-image">Click here to <span class="text-primary">add product image.</span> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+        <!-- Stock Modal -->
+        <div class="modal fade modal-stock" id="modal-stock" aria-labelledby="modal-stock" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <form action="#">
+                    <div class="modal-content">
+                        <div class="modal-header align-items-center p3 p-md-5">
+                            <h2 class="modal-title" id="exampleModalGridTitle">Add Stock</h2>
+                            <div>
+                                <button type="button" class="btn btn-light btn-pill mr-1 mr-md-2" data-dismiss="modal"> cancel </button>
+                                <button type="submit" class="btn btn-primary  btn-pill" data-dismiss="modal"> save </button>
                             </div>
-                        </form>
+
+                        </div>
+                        <div class="modal-body p3 p-md-5">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h3 class="h5 mb-5">Product Information</h3>
+                                    <div class="form-group mb-5">
+                                        <label for="new-product">Product Title</label>
+                                        <input type="text" class="form-control" id="new-product" placeholder="Add Product">
+                                    </div>
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <label for="price">Price</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                                </div>
+                                                <input type="text" class="form-control" id="price" placeholder="Price" aria-label="Price"
+                                                       aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <label for="sale-price">Sale Price</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                                </div>
+                                                <input type="text" class="form-control" id="sale-price" placeholder="Sale Price" aria-label="SalePrice"
+                                                       aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-type mb-3 ">
+                                        <label class="d-block" for="sale-price">Product Type <i class="mdi mdi-help-circle-outline"></i> </label>
+                                        <div>
+
+                                            <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="checked">
+                                                <label class="custom-control-label" for="customRadio1">Physical Good</label>
+                                            </div>
+
+                                            <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio2">Digital Good</label>
+                                            </div>
+
+                                            <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Service</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="editor">
+                                        <label class="d-block" for="sale-price">Description <i class="mdi mdi-help-circle-outline"></i></label>
+                                        <div id="standalone">
+                                            <div id="toolbar">
+                                                <span class="ql-formats">
+                                                    <select class="ql-font"></select>
+                                                    <select class="ql-size"></select>
+                                                </span>
+                                                <span class="ql-formats">
+                                                    <button class="ql-bold"></button>
+                                                    <button class="ql-italic"></button>
+                                                    <button class="ql-underline"></button>
+                                                </span>
+                                                <span class="ql-formats">
+                                                    <select class="ql-color"></select>
+                                                </span>
+                                                <span class="ql-formats">
+                                                    <button class="ql-blockquote"></button>
+                                                </span>
+                                                <span class="ql-formats">
+                                                    <button class="ql-list" value="ordered"></button>
+                                                    <button class="ql-list" value="bullet"></button>
+                                                    <button class="ql-indent" value="-1"></button>
+                                                    <button class="ql-indent" value="+1"></button>
+                                                </span>
+                                                <span class="ql-formats">
+                                                    <button class="ql-direction" value="rtl"></button>
+                                                    <select class="ql-align"></select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div id="editor"></div>
+
+                                        <div class="custom-control custom-checkbox d-inline-block mt-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Hide product from published site</label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile" placeholder="please imgae here">
+                                        <span class="upload-image">Click here to <span class="text-primary">add product image.</span> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
+                </form>
             </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="copyright">
+            &copy; <span id="copy-year"></span> <a class="text-primary"></a>.
 
         </div>
+        <script>
+            var d = new Date();
+            var year = d.getFullYear();
+            document.getElementById("copy-year").innerHTML = year;
+        </script>
+    </footer>
 
-        <!-- Footer -->
-        <footer class="footer mt-auto">
-            <div class="copyright bg-white">
-                <p>
-                    &copy; <span id="copy-year"></span>  <a class="text-primary" href="http://www.iamabdus.com/" target="_blank"></a>.
-                </p>
-            </div>
-            <script>
-                var d = new Date();
-                var year = d.getFullYear();
-                document.getElementById("copy-year").innerHTML = year;
-            </script>
-        </footer>
 
-    </div>
-    </div>
+
 
 </body>
-<script src="plugins/jquery/jquery.min.js"></script>
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="plugins/simplebar/simplebar.min.js"></script>
+<script src="~/Content/plugins/jquery/jquery.min.js"></script>
+<script src="~/Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/Content/plugins/simplebar/simplebar.min.js"></script>
 <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
-<script src="plugins/apexcharts/apexcharts.js"></script>
-<script src="plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-<script src="plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
-<script src="plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
-<script src="plugins/jvectormap/jquery-jvectormap-us-aea.js"></script>
-<script src="plugins/daterangepicker/moment.min.js"></script>
-<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<script src="~/Content/plugins/apexcharts/apexcharts.js"></script>
+<script src="~/Content/plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="~/Content/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+<script src="~/Content/plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
+<script src="~/Content/plugins/jvectormap/jquery-jvectormap-us-aea.js"></script>
+<script src="~/Content/plugins/daterangepicker/moment.min.js"></script>
+<script src="~/Content/plugins/daterangepicker/daterangepicker.js"></script>
 <script>
     jQuery(document).ready(function () {
         jQuery('input[name="dateRange"]').daterangepicker({
@@ -730,10 +724,10 @@
     });
 </script>
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-<script src="plugins/toaster/toastr.min.js"></script>
-<script src="js/mono.js"></script>
-<script src="js/chart.js"></script>
-<script src="js/map.js"></script>
-<script src="js/custom.js"></script>
+<script src="~/Content/plugins/toaster/toastr.min.js"></script>
+<script src="~/Content/js/mono.js"></script>
+<script src="~/Content/js/chart.js"></script>
+<script src="~/Content/js/map.js"></script>
+<script src="~/Content/js/custom.js"></script>
 
 

@@ -21,7 +21,7 @@
 ====== End ======*/
 
 
-function ViewProd(){
+function View(){
     document.getElementById("pio").innerHTML =" Welcome! innerHTML property is being used! ";
 }
 

@@ -8,6 +8,107 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <div class="page-wrapper">
+
+        <!-- Header -->
+        <header class="main-header" id="header">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+                <!-- Sidebar toggle button -->
+                <button id="sidebar-toggler" class="sidebar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+
+                <span class="page-title">Dashboard</span>
+
+                <div class="navbar-right"></div>
+
+
+                <ul class="nav navbar-nav">
+                </ul>
+
+            </nav>
+            @*<div id="producto" style="position: relative; width: 100%; overflow: hidden; padding-top: 100%;">
+                    <iframe  style="height: 1000%; width: 100%; position: absolute; bottom: 0; width: 100%; height: 100%; border: none;" src="~/Products"></iframe>
+                </div>
+
+                <div id="clientes" style="position: relative; width: 100%; overflow: hidden; padding-top: 100%;">
+                    <iframe  style="height: 1000%; width: 100%; position: absolute; bottom: 0; width: 100%; height: 100%; border: none;" src="~/Clientes"></iframe>
+                </div>*@
+
+        </header>
+
+    </div>
+
+    <div class="wrapper">
+
+        <aside class="left-sidebar sidebar-dark" id="left-sidebar">
+            <div id="sidebar" class="sidebar sidebar-with-footer">
+
+                <div class="app-brand">
+                    <a href="~/Home">
+                        <span class="brand-name">MENU</span>
+                    </a>
+                </div>
+
+
+                <div class="sidebar-left" data-simplebar style="height:100%;">
+                    <!-- sidebar menu -->
+                    <ul class="nav sidebar-inner" id="sidebar-menu">
+                        <li class="active">
+                            <a class="sidenav-item-link" href="~/Products">
+                                <i class="mdi mdi-briefcase-account-outline"></i>
+                                <span class="nav-text">Productos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidenav-item-link" href="~/Clientes">
+                                <i class="mdi mdi-account-group"></i>
+                                <span class="nav-text">Clientes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidenav-item-link" href="~/MetodoPagos">
+                                <i class="mdi mdi-account-group"></i>
+                                <span class="nav-text">Metodos De Pago</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidenav-item-link" href="~/Vendedores">
+                                <i class="mdi mdi-account-group"></i>
+                                <span class="nav-text">Vendedores</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidenav-item-link" href="~/Facturas">
+                                <i class="mdi mdi-account-group"></i>
+                                <span class="nav-text">Reporte Facturas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidenav-item-link" href="~/Categoria">
+                                <i class="mdi mdi-account-group"></i>
+                                <span class="nav-text">Categoria de Productos</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-footer">
+                    <div class="sidebar-footer-content">
+                        <ul class="d-flex">
+
+                            <a href="#" data-toggle="tooltip" title="No chat messages">
+                                <i class="mdi mdi-chat-processing"></i>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
     @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -21,17 +122,15 @@
                 @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
 
             </div>*@
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
-        </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        </ul>
     </div>
 
     <div class="container body-content">
         @RenderBody()
-      
-        
+
+
     </div>
 
     @Scripts.Render("~/bundles/jquery")

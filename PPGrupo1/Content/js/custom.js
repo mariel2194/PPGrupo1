@@ -1,9 +1,4 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
+
 
 /* ====== Index ======
 
@@ -24,6 +19,13 @@
 15. OWL CAROUSEL
 
 ====== End ======*/
+
+
+function ViewProd(){
+    document.getElementById("pio").innerHTML =" Welcome! innerHTML property is being used! ";
+}
+
+
 
 $(document).ready(function () {
   "use strict";

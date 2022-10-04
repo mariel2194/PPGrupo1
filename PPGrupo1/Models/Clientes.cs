@@ -13,9 +13,7 @@ namespace PPGrupo1.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         [Key]
-        public int ClienteId { get; set; }
-
-        
+        public int ClienteId { get; set; }        
         
         [Display(Name = "RNC/Cedula")]
         public int Codigo { get; set; }

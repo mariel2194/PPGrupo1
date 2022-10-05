@@ -23,6 +23,8 @@ namespace PPGrupo1.Models
 
         public int CantidadDias { get; set; }
         public bool Activo { get; set; }
+        public bool US { get; set; }
+
 
 
     }

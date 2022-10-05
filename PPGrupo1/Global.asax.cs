@@ -1,5 +1,7 @@
-﻿using System;
+﻿using PPGrupo1.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -16,6 +18,11 @@ namespace PPGrupo1
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Database.SetInitializer<FacturacionProdDbContext>(new System.Data.Entity.DropCreateDatabaseIfModelChanges<FacturacionProdDbContext>());
+            //Database.SetInitializer<ClientesProdDbContext>(new System.Data.Entity.DropCreateDatabaseIfModelChanges<ClientesProdDbContext>());
+            //use this when you need to restore the dbcontext and add new columns or constraints
         }
     }
 }
+
+

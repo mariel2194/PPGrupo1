@@ -3,31 +3,38 @@
 @{
     ViewBag.Title = "Index";
 }
+<div class="custom">
+    <h2>Registro de Productos</h2>
+    <br />
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Fecha)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fecha)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.FacturaId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.FacturaId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.FacturaId })
-        </td>
-    </tr>
-}
+    <div class="btn-text-left">
+        <button type="button" class="btn"> @Html.ActionLink("Create New", "Create")</button>
+    </div>
 
-</table>
+    <br />
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fecha)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.FacturaId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.FacturaId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.FacturaId })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
